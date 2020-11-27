@@ -1,0 +1,79 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo da Memória - Objetos</title>
+        <link rel="stylesheet" href="../t-style.css">
+    </head>
+    <body> 
+      <div class="menu">
+        <button class="menu-button" onclick="backToMenu()">Voltar</button>
+      </div>
+      <section class="you-win">
+        <h1>Voce Ganhou!!</h1>
+      </section>
+      <section class="memory-game">
+          <div class="memory-card" data-framework="ball" id="card"> 
+            <img class="front-face" src="assets/ball.svg" alt="ball" style="background-color: blue;"/>
+            <img class="back-face" src="assets/idea.svg" alt="idea" style="background-color: blue;"/>
+          </div>
+          <div class="memory-card" data-framework="ball" id="card"> 
+            <img class="front-face" src="assets/ball.svg" alt="ball" style="background-color: blue;"/>
+            <img class="back-face" src="assets/idea.svg" alt="idea" style="background-color: blue;"/>
+          </div>
+          <div class="memory-card" data-framework="caneta" id="card">
+            <img class="front-face" src="assets/caneta.svg" alt="caneta" style="background-color: blue;"/>
+            <img class="back-face" src="assets/idea.svg" alt="idea" style="background-color: blue;"/>
+          </div>
+          <div class="memory-card" data-framework="caneta" id="card">
+            <img class="front-face" src="assets/caneta.svg" alt="caneta" style="background-color: blue;"/>
+            <img class="back-face" src="assets/idea.svg" alt="idea" style="background-color: blue;"/>
+          </div>
+          <div class="memory-card" data-framework="folha" id="card">
+            <img class="front-face" src="assets/folha.svg" alt="folha" style="background-color: blue;" />
+            <img class="back-face" src="assets/idea.svg" alt="idea" style="background-color: blue;"/>
+          </div>
+          <div class="memory-card" data-framework="folha" id="card">
+            <img class="front-face" src="assets/folha.svg" alt="folha" style="background-color: blue;" />
+            <img class="back-face" src="assets/idea.svg" alt="idea" style="background-color: blue;"/>
+          </div>
+          <div class="memory-card" data-framework="lupa" id="card">
+            <img class="front-face" src="assets/lupa.svg" alt="lupa" style="background-color: blue;"/>
+            <img class="back-face" src="assets/idea.svg" alt="idea" style="background-color: blue;"/>
+          </div>
+          <div class="memory-card" data-framework="lupa" id="card">
+            <img class="front-face" src="assets/lupa.svg" alt="lupa" style="background-color: blue;"/>
+            <img class="back-face" src="assets/idea.svg" alt="idea" style="background-color: blue;"/>
+          </div>
+          <div class="memory-card" data-framework="mesa" id="card">
+            <img class="front-face" src="assets/mesa.svg" alt="mesa" style="background-color: blue;"/>
+            <img class="back-face" src="assets/idea.svg" alt="idea" style="background-color: blue;"/>
+          </div>
+          <div class="memory-card" data-framework="mesa" id="card">
+            <img class="front-face" src="assets/mesa.svg" alt="mesa" style="background-color: blue;"/>
+            <img class="back-face" src="assets/idea.svg" alt="idea" style="background-color: blue;"/>
+          </div>
+          <div class="memory-card" data-framework="relogio" id="card">
+            <img class="front-face" src="assets/relogio.svg" alt="relogio" style="background-color: blue;"/>
+            <img class="back-face" src="assets/idea.svg" alt="idea" style="background-color: blue;"/>
+          </div>
+          <div class="memory-card" data-framework="relogio" id="card">
+            <img class="front-face" src="assets/relogio.svg" alt="relogio" style="background-color: blue;"/>
+            <img class="back-face" src="assets/idea.svg" alt="idea" style="background-color: blue;"/>
+          </div>
+      </section>
+
+      <div class="options">
+          <button class="restart" onclick="restart()">Recomeçar</button>
+          <div class="bg">
+            <h3>Escolha uma cor de fundo: </h3>
+            <input type="color" name="bg-color" class="bg-color" value="#00ffff">
+            <button onclick="changeBg()" class="bg-button">Definir</button>
+          </div>
+          <button class="shuffle" onclick="shuffle()">Embaralhar</button>
+      </div>
+      
+      <script src="../t-script.js"></script>
+        
+    </body>
+</html>

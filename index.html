@@ -1,0 +1,51 @@
+<!-- TODO: MAKE DIFFERENT DIFFICULTS -->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Jogo da Memória</title>
+    </head>
+    <body>
+        
+        <div class="loading-container" id="loading-container">
+            <div class="loading"  id="loading">
+              <div class="loading__letter">C</div>
+              <div class="loading__letter">a</div>
+              <div class="loading__letter">r</div>
+              <div class="loading__letter">r</div>
+              <div class="loading__letter">e</div>
+              <div class="loading__letter">g</div>
+              <div class="loading__letter">a</div>
+              <div class="loading__letter">n</div>
+              <div class="loading__letter">d</div>
+              <div class="loading__letter">o</div>
+              <div class="loading__letter">.</div>
+              <div class="loading__letter">.</div>
+              <div class="loading__letter">.</div>
+            </div>
+          </div>
+
+        <h1>Jogo da Memória</h1>
+
+        <div class="options">
+            <h3>Escolha o tema de jogo: </h3>
+            <select name="game-theme" id="game-theme">
+                <option class="option" value="animals">Animais</option>
+                <option class="option" value="code-front">Front-End</option>
+                <option class="option" value="code-back">Back-End</option>
+                <option class="option" value="food">Comida</option>
+                <option class="option" value="nerd">Nerd</option>
+                <option class="option" value="objects">Objetos</option>
+            </select>
+
+            <!-- <h3>Escolha a cor de fundo: </h3>
+            <input type="color" name="bg-select" id="bg-select"> -->
+
+            <button class="play" onclick="playGame()">Jogar!</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

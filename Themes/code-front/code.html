@@ -1,0 +1,79 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo da Memória - Front-End</title>
+        <link rel="stylesheet" href="../t-style.css">
+    </head>
+    <body> 
+      <div class="menu">
+        <button class="menu-button" onclick="backToMenu()">Voltar</button>
+      </div>
+      <section class="you-win">
+        <h1>Voce Ganhou!!</h1>
+      </section>
+      <section class="memory-game">
+          <div class="memory-card" data-framework="aurelia" id="card"> 
+            <img class="front-face" src="assets/aurelia.svg" alt="Aurelia" />
+            <img class="back-face" src="assets/js-badge.svg" alt="JS Badge" />
+          </div>
+          <div class="memory-card" data-framework="aurelia" id="card"> 
+            <img class="front-face" src="assets/aurelia.svg" alt="Aurelia" />
+            <img class="back-face" src="assets/js-badge.svg" alt="JS Badge" />
+          </div>
+          <div class="memory-card" data-framework="vue" id="card">
+            <img class="front-face" src="assets/vue.svg" alt="Vue" />
+            <img class="back-face" src="assets/js-badge.svg" alt="JS Badge" />
+          </div>
+          <div class="memory-card" data-framework="vue" id="card">
+            <img class="front-face" src="assets/vue.svg" alt="Vue" />
+            <img class="back-face" src="assets/js-badge.svg" alt="JS Badge" />
+          </div>
+          <div class="memory-card" data-framework="angular" id="card">
+            <img class="front-face" src="assets/angular.svg" alt="Angular" />
+            <img class="back-face" src="assets/js-badge.svg" alt="JS Badge" />
+          </div>
+          <div class="memory-card" data-framework="angular" id="card">
+            <img class="front-face" src="assets/angular.svg" alt="Angular" />
+            <img class="back-face" src="assets/js-badge.svg" alt="JS Badge" />
+          </div>
+          <div class="memory-card" data-framework="ember" id="card">
+            <img class="front-face" src="assets/ember.svg" alt="Ember" />
+            <img class="back-face" src="assets/js-badge.svg" alt="JS Badge" />
+          </div>
+          <div class="memory-card" data-framework="ember" id="card">
+            <img class="front-face" src="assets/ember.svg" alt="Ember" />
+            <img class="back-face" src="assets/js-badge.svg" alt="JS Badge" />
+          </div>
+          <div class="memory-card" data-framework="backbone" id="card">
+            <img class="front-face" src="assets/backbone.svg" alt="Backbone" />
+            <img class="back-face" src="assets/js-badge.svg" alt="JS Badge" />
+          </div>
+          <div class="memory-card" data-framework="backbone" id="card">
+            <img class="front-face" src="assets/backbone.svg" alt="Backbone" />
+            <img class="back-face" src="assets/js-badge.svg" alt="JS Badge" />
+          </div>
+          <div class="memory-card" data-framework="react" id="card">
+            <img class="front-face" src="assets/react.svg" alt="React" />
+            <img class="back-face" src="assets/js-badge.svg" alt="JS Badge" />
+          </div>
+          <div class="memory-card" data-framework="react" id="card">
+            <img class="front-face" src="assets/react.svg" alt="React" />
+            <img class="back-face" src="assets/js-badge.svg" alt="JS Badge" />
+          </div>
+      </section>
+
+      <div class="options">
+          <button class="restart" onclick="restart()">Recomeçar</button>
+          <div class="bg">
+            <h3>Escolha uma cor de fundo: </h3>
+            <input type="color" name="bg-color" class="bg-color" value="#00ffff">
+            <button onclick="changeBg()" class="bg-button">Definir</button>
+          </div>
+          <button class="shuffle" onclick="shuffle()">Embaralhar</button>
+      </div>
+      
+      <script src="../t-script.js"></script>
+        
+    </body>
+</html>

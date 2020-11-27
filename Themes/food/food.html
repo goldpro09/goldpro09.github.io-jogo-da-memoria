@@ -1,0 +1,79 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo da Memória - Comida</title>
+        <link rel="stylesheet" href="../t-style.css">
+    </head>
+    <body> 
+      <div class="menu">
+        <button class="menu-button" onclick="backToMenu()">Voltar</button>
+      </div>
+      <section class="you-win">
+        <h1>Voce Ganhou!!</h1>
+      </section>
+      <section class="memory-game">
+          <div class="memory-card " data-framework="banana" id="card"> 
+            <img class="front-face" src="assets/banana.svg" alt="banana" style="background-color: #f6bc1d;"/>
+            <img class="back-face f" src="assets/restaurant.svg" alt="restaurant" style="background-color: #f6bc1d;"/>
+          </div>
+          <div class="memory-card " data-framework="banana" id="card"> 
+            <img class="front-face" src="assets/banana.svg" alt="banana" style="background-color: #f6bc1d;"/>
+            <img class="back-face f" src="assets/restaurant.svg" alt="restaurant" style="background-color: #f6bc1d;"/>
+          </div>
+          <div class="memory-card " data-framework="cake" id="card">
+            <img class="front-face" src="assets/cake.svg" alt="cake" style="background-color: #f6bc1d;"/>
+            <img class="back-face f" src="assets/restaurant.svg" alt="restaurant" style="background-color: #f6bc1d;"/>
+          </div>
+          <div class="memory-card " data-framework="cake" id="card">
+            <img class="front-face" src="assets/cake.svg" alt="cake" style="background-color: #f6bc1d;"/>
+            <img class="back-face f" src="assets/restaurant.svg" alt="restaurant" style="background-color: #f6bc1d;"/>
+          </div>
+          <div class="memory-card " data-framework="french-fries" id="card">
+            <img class="front-face" src="assets/french-fries.svg" alt="french-fries" style="background-color: #f6bc1d;"/>
+            <img class="back-face f" src="assets/restaurant.svg" alt="restaurant" style="background-color: #f6bc1d;"/>
+          </div>
+          <div class="memory-card " data-framework="french-fries" id="card">
+            <img class="front-face" src="assets/french-fries.svg" alt="french-fries" style="background-color: #f6bc1d;"/>
+            <img class="back-face f" src="assets/restaurant.svg" alt="restaurant" style="background-color: #f6bc1d;"/>
+          </div>
+          <div class="memory-card " data-framework="grapes" id="card">
+            <img class="front-face" src="assets/grapes.svg" alt="grapes" style="background-color: #f6bc1d;"/>
+            <img class="back-face f" src="assets/restaurant.svg" alt="restaurant" style="background-color: #f6bc1d;"/>
+          </div>
+          <div class="memory-card " data-framework="grapes" id="card">
+            <img class="front-face" src="assets/grapes.svg" alt="grapes" style="background-color: #f6bc1d;"/>
+            <img class="back-face f" src="assets/restaurant.svg" alt="restaurant" style="background-color: #f6bc1d;"/>
+          </div>
+          <div class="memory-card " data-framework="hamburger" id="card">
+            <img class="front-face" src="assets/hamburger.svg" alt="hamburger" style="background-color: #f6bc1d;"/>
+            <img class="back-face f" src="assets/restaurant.svg" alt="restaurant" style="background-color: #f6bc1d;"/>
+          </div>
+          <div class="memory-card " data-framework="hamburger" id="card">
+            <img class="front-face" src="assets/hamburger.svg" alt="hamburger" style="background-color: #f6bc1d;"/>
+            <img class="back-face f" src="assets/restaurant.svg" alt="restaurant" style="background-color: #f6bc1d;"/>
+          </div>
+          <div class="memory-card " data-framework="orange" id="card">
+            <img class="front-face" src="assets/orange.svg" alt="orange" style="background-color: #f6bc1d;"/>
+            <img class="back-face f" src="assets/restaurant.svg" alt="restaurant" style="background-color: #f6bc1d;"/>
+          </div>
+          <div class="memory-card " data-framework="orange" id="card">
+            <img class="front-face" src="assets/orange.svg" alt="orange" style="background-color: #f6bc1d;"/>
+            <img class="back-face f" src="assets/restaurant.svg" alt="restaurant" style="background-color: #f6bc1d;"/>
+          </div>
+      </section>
+
+      <div class="options">
+          <button class="restart" onclick="restart()">Recomeçar</button>
+          <div class="bg">
+            <h3>Escolha uma cor de fundo: </h3>
+            <input type="color" name="bg-color" class="bg-color" value="#00ffff">
+            <button onclick="changeBg()" class="bg-button">Definir</button>
+          </div>
+          <button class="shuffle" onclick="shuffle()">Embaralhar</button>
+      </div>
+      
+      <script src="../t-script.js"></script>
+        
+    </body>
+</html>

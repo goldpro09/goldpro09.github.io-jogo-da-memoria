@@ -1,0 +1,79 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo da Memória - Nerd</title>
+        <link rel="stylesheet" href="../t-style.css">
+    </head>
+    <body> 
+      <div class="menu">
+        <button class="menu-button" onclick="backToMenu()">Voltar</button>
+      </div>
+      <section class="you-win">
+        <h1>Voce Ganhou!!</h1>
+      </section>
+      <section class="memory-game">
+          <div class="memory-card" data-framework="rebel" id="card"> 
+            <img class="front-face" src="assets/rebel.svg" alt="rebel" style="background-color: #1df682;"/>
+            <img class="back-face" src="assets/nerd.svg" alt="nerd" style="background-color: #1df682;"/>
+          </div>
+          <div class="memory-card" data-framework="rebel" id="card"> 
+            <img class="front-face" src="assets/rebel.svg" alt="rebel" style="background-color: #1df682;"/>
+            <img class="back-face" src="assets/nerd.svg" alt="nerd" style="background-color: #1df682;"/>
+          </div>
+          <div class="memory-card" data-framework="xman" id="card">
+            <img class="front-face" src="assets/xman.svg" alt="xman" style="background-color: #1df682;"/>
+            <img class="back-face" src="assets/nerd.svg" alt="nerd" style="background-color: #1df682;"/>
+          </div>
+          <div class="memory-card" data-framework="xman" id="card">
+            <img class="front-face" src="assets/xman.svg" alt="xman"  style="background-color: #1df682;"/>
+            <img class="back-face" src="assets/nerd.svg" alt="nerd"  style="background-color: #1df682;"/>
+          </div>
+          <div class="memory-card" data-framework="atari" id="card">
+            <img class="front-face" src="assets/atari.svg" alt="atari" style="background-color: #1df682;"/>
+            <img class="back-face" src="assets/nerd.svg" alt="nerd"  style="background-color: #1df682;"/>
+          </div>
+          <div class="memory-card" data-framework="atari" id="card">
+            <img class="front-face" src="assets/atari.svg" alt="atari" style="background-color: #1df682;"/>
+            <img class="back-face" src="assets/nerd.svg" alt="nerd"  style="background-color: #1df682;"/>
+          </div>
+          <div class="memory-card" data-framework="tetris" id="card">
+            <img class="front-face" src="assets/tetris.svg" alt="tetris" style="background-color: #1df682;"/>
+            <img class="back-face" src="assets/nerd.svg" alt="nerd" style="background-color: #1df682;"/>
+          </div>
+          <div class="memory-card" data-framework="tetris" id="card">
+            <img class="front-face" src="assets/tetris.svg" alt="tetris" style="background-color: #1df682;"/>
+            <img class="back-face" src="assets/nerd.svg" alt="nerd" style="background-color: #1df682;"/>
+          </div>
+          <div class="memory-card" data-framework="windows" id="card">
+            <img class="front-face" src="assets/windows.svg" alt="windows" style="background-color: #1df682;"/>
+            <img class="back-face" src="assets/nerd.svg" alt="nerd" style="background-color: #1df682;"/>
+          </div>
+          <div class="memory-card" data-framework="windows" id="card">
+            <img class="front-face" src="assets/windows.svg" alt="windows" style="background-color: #1df682;"/>
+            <img class="back-face" src="assets/nerd.svg" alt="nerd" style="background-color: #1df682;"/>
+          </div>
+          <div class="memory-card" data-framework="rubik" id="card">
+            <img class="front-face" src="assets/rubik.svg" alt="rubik" style="background-color: #1df682;" />
+            <img class="back-face" src="assets/nerd.svg" alt="nerd" style="background-color: #1df682;"/>
+          </div>
+          <div class="memory-card" data-framework="rubik" id="card">
+            <img class="front-face" src="assets/rubik.svg" alt="rubik" style="background-color: #1df682;" />
+            <img class="back-face" src="assets/nerd.svg" alt="nerd" style="background-color: #1df682;"/>
+          </div>
+      </section>
+
+      <div class="options">
+          <button class="restart" onclick="restart()">Recomeçar</button>
+          <div class="bg">
+            <h3>Escolha uma cor de fundo: </h3>
+            <input type="color" name="bg-color" class="bg-color" value="#00ffff">
+            <button onclick="changeBg()" class="bg-button">Definir</button>
+          </div>
+          <button class="shuffle" onclick="shuffle()">Embaralhar</button>
+      </div>
+      
+      <script src="../t-script.js"></script>
+        
+    </body>
+</html>

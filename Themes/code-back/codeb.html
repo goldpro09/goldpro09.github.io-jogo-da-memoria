@@ -1,0 +1,79 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo da Memória - Back-End</title>
+        <link rel="stylesheet" href="../t-style.css">
+    </head>
+    <body> 
+      <div class="menu">
+        <button class="menu-button" onclick="backToMenu()">Voltar</button>
+      </div>
+      <section class="you-win">
+        <h1>Voce Ganhou!!</h1>
+      </section>
+      <section class="memory-game">
+          <div class="memory-card" data-framework="c#" id="card"> 
+            <img class="front-face" src="assets/csharp.svg" alt="c#" style="background-color: #d61e1e;"/>
+            <img class="back-face" src="assets/c.svg" alt="c" style="background-color: #d61e1e;"/>
+          </div>
+          <div class="memory-card" data-framework="c#" id="card"> 
+            <img class="front-face" src="assets/csharp.svg" alt="c#" style="background-color: #d61e1e;" />
+            <img class="back-face" src="assets/c.svg" alt="c" style="background-color: #d61e1e;"/>
+          </div>
+          <div class="memory-card" data-framework="c++" id="card">
+            <img class="front-face" src="assets/c++.svg" alt="c++" style="background-color: #d61e1e;"/>
+            <img class="back-face" src="assets/c.svg" alt="c" style="background-color: #d61e1e;"/>
+          </div>
+          <div class="memory-card" data-framework="c++" id="card">
+            <img class="front-face" src="assets/c++.svg" alt="c++" style="background-color: #d61e1e;"/>
+            <img class="back-face" src="assets/c.svg" alt="c" style="background-color: #d61e1e;"/>
+          </div>
+          <div class="memory-card" data-framework="java" id="card">
+            <img class="front-face" src="assets/java.svg" alt="java" style="background-color: #d61e1e;"/>
+            <img class="back-face" src="assets/c.svg" alt="c" style="background-color: #d61e1e;"/>
+          </div>
+          <div class="memory-card" data-framework="java" id="card">
+            <img class="front-face" src="assets/java.svg" alt="java" style="background-color: #d61e1e;"/>
+            <img class="back-face" src="assets/c.svg" alt="c" style="background-color: #d61e1e;"/>
+          </div>
+          <div class="memory-card" data-framework="people" id="card">
+            <img class="front-face" src="assets/people.svg" alt="people" style="background-color: #d61e1e;"/>
+            <img class="back-face" src="assets/c.svg" alt="c" style="background-color: #d61e1e;"/>
+          </div>
+          <div class="memory-card" data-framework="people" id="card">
+            <img class="front-face" src="assets/people.svg" alt="people" style="background-color: #d61e1e;"/>
+            <img class="back-face" src="assets/c.svg" alt="c" style="background-color: #d61e1e;"/>
+          </div>
+          <div class="memory-card" data-framework="php" id="card">
+            <img class="front-face" src="assets/php.svg" alt="php" style="background-color: #d61e1e;"/>
+            <img class="back-face" src="assets/c.svg" alt="c" style="background-color: #d61e1e;"/>
+          </div>
+          <div class="memory-card" data-framework="php" id="card">
+            <img class="front-face" src="assets/php.svg" alt="php" style="background-color: #d61e1e;"/>
+            <img class="back-face" src="assets/c.svg" alt="c" style="background-color: #d61e1e;"/>
+          </div>
+          <div class="memory-card" data-framework="ruby" id="card">
+            <img class="front-face" src="assets/ruby.svg" alt="ruby" style="background-color: #d61e1e;"/>
+            <img class="back-face" src="assets/c.svg" alt="c" style="background-color: #d61e1e;"/>
+          </div>
+          <div class="memory-card" data-framework="ruby" id="card">
+            <img class="front-face" src="assets/ruby.svg" alt="ruby" style="background-color: #d61e1e;"/>
+            <img class="back-face" src="assets/c.svg" alt="c" style="background-color: #d61e1e;"/>
+          </div>
+      </section>
+
+      <div class="options">
+          <button class="restart" onclick="restart()">Recomeçar</button>
+          <div class="bg">
+            <h3>Escolha uma cor de fundo: </h3>
+            <input type="color" name="bg-color" class="bg-color" value="#00ffff">
+            <button onclick="changeBg()" class="bg-button">Definir</button>
+          </div>
+          <button class="shuffle" onclick="shuffle()">Embaralhar</button>
+      </div>
+      
+      <script src="../t-script.js"></script>
+        
+    </body>
+</html>
